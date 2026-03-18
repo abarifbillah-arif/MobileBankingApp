@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin:0; padding:0; }
+        .toolbar { background: #fff; padding: 16px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+        .toolbar h1 { margin:0; font-size: 18px; color:#000; }
+        .card { background: #fff; border-radius: 16px; padding: 20px; margin: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+        .card h2 { margin-top:0; }
+        .button { background: #673de6; color:#fff; border:none; padding:10px 20px; border-radius:8px; cursor:pointer; margin-top:8px; }
+        .payment-methods { display:flex; gap:8px; flex-wrap:wrap; margin:16px; }
+        .method { flex:1 1 45%; background:#eee; padding:12px; border-radius:8px; text-align:center; font-weight:bold; }
+        .quick-actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:16px; }
+        .action { background:#fff; padding:16px; border-radius:12px; text-align:center; box-shadow:0 1px 2px rgba(0,0,0,0.1);}
+    </style>
+</head>
+<body>
+
+    <div class="toolbar">
+        <h1>স্বাগতম, Arif Billah</h1>
+        <button class="button">লগআউট</button>
+    </div>
+
+    <div class="card">
+        <h2>মোট ব্যালেন্স</h2>
+        <p style="font-size:32px; font-weight:bold;">৳ ১২,৫০০.০০</p>
+        <p>**** **** **** 4582</p>
+        <p>০৯/২৬ | ভিসা ডেবিট</p>
+    </div>
+
+    <h3 style="margin-left:16px;">পদ্ধতি নির্বাচন করুন</h3>
+    <div class="payment-methods">
+        <div class="method" style="color:#eb1c24;">bKash</div>
+        <div class="method" style="color:#ff6600;">Nagad</div>
+        <div class="method" style="color:#ff0000;">Rocket</div>
+        <div class="method" style="color:#004aad;">DBBL</div>
+    </div>
+
+    <h3 style="margin-left:16px;">দ্রুত লেনদেন</h3>
+    <div class="quick-actions">
+        <div class="action">📤 পাঠান</div>
+        <div class="action">💰 ক্যাশ আউট</div>
+        <div class="action">📱 রিচার্জ</div>
+        <div class="action">📋 হিস্ট্রি</div>
+    </div>
+
+    <div class="card">
+        <h2>সাম্প্রতিক লেনদেন</h2>
+        <ul>
+            <li>12-03-2026: পাঠানো 500৳ - সফল</li>
+            <li>11-03-2026: রিচার্জ 300৳ - সফল</li>
+            <li>10-03-2026: ক্যাশ আউট 1000৳ - ব্যর্থ</li>
+        </ul>
+    </div>
+
+</body>
+</html>
